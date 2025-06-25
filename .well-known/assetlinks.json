@@ -1,12 +1,12 @@
 [
-  {
-    "relation": ["delegate_permission/common.handle_all_urls"],
-    "target": {
-      "namespace": "android_app",
-      "package_name": "com.example.yourapp",
-      "sha256_cert_fingerprints": [
-        "AA:BB:CC:DD:EE:FF:00:11:22:33:44:55:66:77:88:99:AA:BB:CC:DD:EE:FF:00:11:22:33:44:55:66:77:88:99"
-      ]
+    {
+      "relation": ["delegate_permission/common.handle_all_urls"],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "com.example.flutter_application_1",
+        "sha256_cert_fingerprints": [
+          "91:BA:C3:54:2E:50:7E:1D:90:79:1D:39:F1:58:9E:47:94:D8:4E:C7:AD:7E:49:35:80:16:6B:F3:CC:FC:F8:4D"
+        ]
+      }
     }
-  }
 ] 
