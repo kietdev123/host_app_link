@@ -38,6 +38,12 @@
             margin: 10px 0;
             overflow-x: auto;
         }
+        .status {
+            background: #e7f3ff;
+            border-left: 4px solid #2196F3;
+            padding: 15px;
+            margin: 10px 0;
+        }
     </style>
 </head>
 <body>
@@ -45,21 +51,31 @@
         <h1>🚀 Android App Link Test</h1>
         <p>Trang này được sử dụng để test Android App Links.</p>
         
+        <div class="status">
+            <strong>📍 Domain:</strong> kietdev123.github.io/host_app_link<br>
+            <strong>📱 Package:</strong> com.example.flutter_application_1<br>
+            <strong>🔗 Assetlinks:</strong> <a href="/.well-known/assetlinks.json" target="_blank">/.well-known/assetlinks.json</a>
+        </div>
+        
         <h2>📱 Test Links</h2>
-        <a href="https://yourdomain.github.io/app/product/123" class="link-button">
+        <a href="https://kietdev123.github.io/host_app_link/product/123" class="link-button">
             Mở App - Product 123
         </a>
         <br>
-        <a href="https://yourdomain.github.io/app/user/profile" class="link-button">
+        <a href="https://kietdev123.github.io/host_app_link/user/profile" class="link-button">
             Mở App - User Profile
+        </a>
+        <br>
+        <a href="https://kietdev123.github.io/host_app_link/" class="link-button">
+            Mở App - Home Page
         </a>
         
         <h2>📋 Hướng dẫn setup</h2>
         <ol>
-            <li>Thay thế <code>com.example.yourapp</code> bằng package name thật của app</li>
-            <li>Thay thế SHA256 fingerprint bằng fingerprint thật của app</li>
-            <li>Cập nhật domain trong file assetlinks.json</li>
-            <li>Enable GitHub Pages cho repository này</li>
+            <li>✅ Package name: <code>com.example.flutter_application_1</code></li>
+            <li>✅ SHA256 fingerprint: <code>91:BA:C3:54:2E:50:7E:1D:90:79:1D:39:F1:58:9E:47:94:D8:4E:C7:AD:7E:49:35:80:16:6B:F3:CC:FC:F8:4D</code></li>
+            <li>✅ Domain: <code>kietdev123.github.io/host_app_link</code></li>
+            <li>⚠️ GitHub Pages: Cần kiểm tra xem file assetlinks.json có accessible không</li>
         </ol>
         
         <h2>🔧 Lấy SHA256 Fingerprint</h2>
@@ -71,6 +87,17 @@
         <h2>📁 File assetlinks.json</h2>
         <p>File này được đặt tại: <code>/.well-known/assetlinks.json</code></p>
         <a href="/.well-known/assetlinks.json" target="_blank">Xem file assetlinks.json</a>
+        
+        <h2>🔍 Debug Info</h2>
+        <p>Nếu app không mở được, kiểm tra:</p>
+        <ul>
+            <li>App có được cài đặt không?</li>
+            <li>Intent filter trong AndroidManifest.xml có đúng không?</li>
+            <li>File assetlinks.json có accessible từ URL: <br>
+                <code>https://kietdev123.github.io/host_app_link/.well-known/assetlinks.json</code>
+            </li>
+            <li>SHA256 fingerprint có khớp với certificate của app không?</li>
+        </ul>
     </div>
 </body>
 </html> 
